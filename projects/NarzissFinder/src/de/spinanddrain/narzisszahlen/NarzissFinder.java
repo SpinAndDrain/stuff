@@ -44,12 +44,12 @@ public class NarzissFinder {
 			 * auf die Narzisseigenschaft überprüft.
 			 */
 			for(long i = 0; i <= g; i++) {
-				int[] p = parse(String.valueOf(i).toCharArray()); 				  // Zerlegung der Zahl in die
-				long result = 0;								  // einzelnen Stellen
-				for(int s : p)									  // Addieren aller potenzierten Werte
+				int[] p = parse(String.valueOf(i).toCharArray()); 		// Zerlegung der Zahl in die
+				long result = 0;						// einzelnen Stellen
+				for(int s : p)							// Addieren aller potenzierten Werte
 					result += Math.pow(s, p.length);
-				if(result == i)									  // Überprüfung der Narzisseig.
-					found.add(result);							  // und ggf. zur Sammlung hinzufügen
+				if(result == i)							// Überprüfung der Narzisseig.
+					found.add(result);					// und ggf. zur Sammlung hinzufügen
 				System.out.print("Suchen... " + new DecimalFormat("0.00")
 						.format(((double) (i * 100) / g)) + "%\r");
 			}
