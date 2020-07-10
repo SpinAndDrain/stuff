@@ -44,7 +44,7 @@ public class NarzissFinder {
 			 * auf die Narzisseigenschaft überprüft.
 			 */
 			for(long i = 0; i <= g; i++) {
-				int[] p = parse(String.valueOf(i).toCharArray()); // Zerlegung der Zahl in die
+				int[] p = parse(String.valueOf(i).toCharArray()); 				  // Zerlegung der Zahl in die
 				long result = 0;								  // einzelnen Stellen
 				for(int s : p)									  // Addieren aller potenzierten Werte
 					result += Math.pow(s, p.length);
