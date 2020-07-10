@@ -40,7 +40,7 @@ public class NarzissFinder {
 			System.out.print("Suchen... 0,00%\r");
 			long time = System.currentTimeMillis();
 			
-			/* Schleife, die alle natürlichen Zahlen im Wertebereich {0 < i < g}
+			/* Schleife, die alle natürlichen Zahlen im Wertebereich {0 <= i <= g}
 			 * auf die Narzisseigenschaft überprüft.
 			 */
 			for(long i = 0; i <= g; i++) {
